@@ -16,44 +16,47 @@
     </head>
     <body>
       <header>
-        <h1>Jacob Pariseau</h1>
-        <h2>Web Developer :: Game Developer</h2>
+        <img class="avatar" src="img/profile.png" />
         {{> ./partials/social}}
+        <div class="info">
+          <h1>Jacob Pariseau</h1>
+          <h2>Hello, I am a journeyman welder and freelance web developer living in Grande&nbsp;Prairie, Alberta</h2>
+        </div>
       </header>
       <main>
-        <section>
+        <section class="card">
           <a href="https://firecup.ca/"><h2 class="red">Firecup</h2></a>
           <label>Description</label>
           <p>A party game you can play on your phone, laptop, or tablet in a room with all your friends. Draw challenge cards and punish the losers with elaborate drinking methods and persistent status effects.</p>
           <label>Technology</label>
           <p>Angular and Material Design on top of a MongoDB, Express, and Node.js stack with Socket.io to keep the players synchronised.</p>
         </section>
-        <section>
+        <section class="card">
           <a href="http://magicfireball.com/"><h2 class="orange">Magic Fireball</h2></a>
           <label>Description</label>
           <p>The original One-Click Drinking Game -- shake the fireball and get a random rule or challenge</p>
           <label>Technology</label>
           <p>JQuery on a static HTML5 site with data stored on a JSON file</p>
         </section>
-        <section>
+        <section class="card">
           <a href="http://firecup.ca:8080" rel="nofollow"><h2 class="cyan">Doctor Ink</h2></a>
           <label>Description</label>
           <p>A social pictionary-style sketch-guessing game with online multiplayer, chat, and a custom line-smoothing algorithm.</p>
           <label>Technology</label>
           <p>JQuery and HTML5 Canvas on a MongoDB, Express, Socket.io, and Node.js stack.</p>
         </section>
-        <section>
+        <section class="card">
           <a href="https://github.com/jacobpariseau/carbon"><h2 class="grey">Carbon Static Site Generator</h2></a>
           <label>Description</label>
           <p>A simple gulp setup that compiles source templates and scripts into a static, minified, product.</p>
           <label>Technology</label>
           <p>Mustache, LESS, Gulp, Node.js</p>
         </section>
+        <footer>
+          <h2>For work or general inquiry, contact me at any time</h2>
+          {{> ./partials/social}}
+        </footer>
       </main>
-      <footer>
-        <h2>For work, suggestions, or general inquiry, hit me up any time</h2>
-        {{> ./partials/social}}
-      </footer>
 
       <!-- POST LOAD INCLUDES -->
         <script src="js/main.js"></script>
