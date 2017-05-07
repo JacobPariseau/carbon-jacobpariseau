@@ -47,7 +47,7 @@ header {
     position: absolute;
     top: 30%;
     transform: translateY(-30%);
-    max-width: 100%;
+    width: 100%;
     left: 0;
   }
   ul.social-links {
@@ -91,6 +91,14 @@ main {
     margin-left:50%;
   }
 }
+a.card {
+  color: #252525;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 section {
   &.card {
     margin: 0 1rem 1rem 1rem;
@@ -101,8 +109,17 @@ section {
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
   }
-  a {
-    color: white;
+  &.thumbnail-card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 1rem;
+    width: 40%;
+    display: inline-block;
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    img {
+      max-width: 100%;
+    }
   }
   h2 {
     font-weight: normal;
@@ -143,6 +160,10 @@ footer {
 
 .cyan {
   background: @cyan;
+}
+
+.green {
+  background: #43a047;
 }
 
 .grey {
