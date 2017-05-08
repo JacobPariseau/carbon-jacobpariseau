@@ -1,0 +1,11 @@
+{
+  "type": "games",
+  "order": 3,
+  "title": "Doctor Ink",
+  "links": [
+    {
+      "label": "website",
+      "url": "http://firecup.ca:8080"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "games",
+  "order": 4,
+  "title": "Magic Fireball",
+  "links": [
+    {
+      "label": "website",
+      "url": "http://magicfireball.com/"
+    }
+  ]
+}
