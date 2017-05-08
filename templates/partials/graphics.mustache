@@ -1,8 +1,11 @@
-{{#games}}
+{{#graphics}}
 	<div class="work work-{{id}}">
 		<div class="banner" data-bg="img/{{id}}/banner.png"></div>
 		<h1>{{title}}</h1>
-		<div class="info"><p>{{{description}}}</p></div>
+    <figure>
+      <figcaption class="info">{{{description}}}</figcaption>
+      <img src="img/{{id}}/preview.png"/>
+    </figure>
 		{{#links.length}}
   		<div class="links">
   		{{#links}}
@@ -11,4 +14,4 @@
   		</div>
 		{{/links.length}}
 	</div>
-{{/games}}
+{{/graphics}}

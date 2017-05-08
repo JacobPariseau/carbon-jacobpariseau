@@ -1,8 +1,8 @@
 @red: #f44336;
 @orange: #ef6c00;
 @cyan: #2196f3;
-@grey: #212121;
-
+@grey: rgb(30,33,36);;
+@white: #fafafa;
 html {
   overflow-x: hidden;
 }
@@ -91,13 +91,6 @@ main {
     margin-left: 40%;
   }
 }
-a.card {
-  color: #252525;
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-}
 
 .portfolio {
   clear: both;
@@ -107,13 +100,15 @@ a.card {
     padding: 1rem 0;
   }
 }
+
 .preview {
   height: 180px;
   float: left;
   cursor: pointer;
   overflow: hidden;
   margin: 0;
-  border: 0.25rem solid rgba(0,0,0,0);
+  border: 0.25rem solid @white;
+  background-color: @grey;
   position: relative;
   box-sizing: border-box;
   img {
@@ -123,6 +118,7 @@ a.card {
     right: 0;
     top: 50%;
     opacity: 1;
+    border: 1px solid @white;
     transform: translateY(-50%);
     transition: opacity 0.6s, transform 0.4s;
   }
@@ -130,6 +126,7 @@ a.card {
     font-size: 175%;
     line-height: 1.25;
     text-align: center;
+    color: @white;
     padding: 0 1rem;
     opacity: 0;
     transform: translateY(-50%);
@@ -150,6 +147,54 @@ a.card {
   }
   @media only screen and (min-width: 400px) {
     width: 50%;
+  }
+}
+
+aside.works {
+  transform: translateX(100%);
+  transition: transform 0.6s;
+  position: absolute;
+  background: #36393e;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+  .work {
+    display: none;
+    padding: 0 1rem;
+    label {
+      font-weight: bold;
+    }
+  }
+  .back {
+    font-size: 150%;
+    line-height: 2;
+    padding: 0 1rem;
+    background: #554444;
+    border-bottom: 1px solid rgba(255,128,128,0.1);
+    a {
+      color: white;
+      display: block;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .links {
+    button {
+      background: #ef6c00;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      color: rgba(255,255,255,0.8);
+      font-weight: 500;
+      text-transform: uppercase;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      cursor: pointer;
+      &:hover {
+        background: #f57c00;
+      }
+    }
   }
 }
 
